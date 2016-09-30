@@ -2,21 +2,18 @@
 
 **TODO: Finish and write better**
 
-First, we create the workspace. In our case we create `computer_vision/qi_wrokspace/`.
+First, we create the workspace. In our case we create `helloworld/`.
 Second, we get into the folder created and we use the next command: 
 
 ```
 qibuild init
-```
-
-After that, we create the folder of our project:
-
-```
-qisrc create name_of_the_folder
+qisrc add helloworld
 ```
 
 A folder with that name has been created and inside there are a CMakeLists.txt, main.cpp, qiproject.xml and a test.cpp
-The next steps are necessary for compile the project with the toolchain of NAOqi:
+The next steps are necessary for compile the project with the toolchain of NAOqi.
+The toolchain file it's necessary when cross-compiling with CMake.
+The toolchain of NAOqi must be in the naoqi-sdk folder.
 
 ```
 qitoolchain create cross-atom /path/to/the/toolchain.xml
