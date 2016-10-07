@@ -30,3 +30,11 @@ For compile and build our project are the next commands:
 qibuild configure -c cross-atom
 qibuild make -c cross-atom 
 ```
+
+**NOTE:** When you use RAPP API with Aldebaran libraries you have to specify in the CMakeLists.txt the next command:
+
+```
+set(CMAKE_CXX_FLAGS "-std=gnu++1y")
+```
+
+Instead of `"-std=c++1y"`.
