@@ -19,7 +19,7 @@ message(STATUS "${RAPP_LIBRARY}")
 find_package(OpenSSL REQUIRED)
 message(STATUS "${OPENSSL_LIBRARIES}")
 
-find_package(Boost 1.55 COMPONENTS system REQUIRED)
+find_package(Boost COMPONENTS system REQUIRED)
 set(Boost_USE_STATIC_LIBS ON)
 set(BUILD_SHARED_LIBS OFF)
 include_directories(${Boost_INCLUDE_DIR})

@@ -1,0 +1,1 @@
+/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/face_detection.dir

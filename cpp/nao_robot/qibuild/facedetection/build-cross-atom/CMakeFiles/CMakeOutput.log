@@ -1,0 +1,362 @@
+The target system is: Linux -  - i686
+The host system is: Linux - 4.4.0-38-generic - i686
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2366063963/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2366063963.dir/build.make CMakeFiles/cmTryCompileExec2366063963.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2366063963.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec2366063963.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2366063963
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2366063963.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec2366063963.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2366063963 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2486606335/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2486606335.dir/build.make CMakeFiles/cmTryCompileExec2486606335.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2486606335.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2486606335.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2486606335
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2486606335.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec2486606335.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2486606335 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3957205410/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3957205410.dir/build.make CMakeFiles/cmTryCompileExec3957205410.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3957205410.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec3957205410.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3957205410
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3957205410.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec3957205410.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3957205410 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec340237362/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec340237362.dir/build.make CMakeFiles/cmTryCompileExec340237362.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec340237362.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec340237362.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec340237362
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec340237362.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec340237362.dir/CheckFunctionExists.c.o  -o cmTryCompileExec340237362 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1646028212/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1646028212.dir/build.make CMakeFiles/cmTryCompileExec1646028212.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1646028212.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec1646028212.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1646028212
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1646028212.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1646028212.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1646028212 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1278406196/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1278406196.dir/build.make CMakeFiles/cmTryCompileExec1278406196.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1278406196.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1278406196.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1278406196
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1278406196.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1278406196.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1278406196 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4203869831/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4203869831.dir/build.make CMakeFiles/cmTryCompileExec4203869831.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4203869831.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec4203869831.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec4203869831
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4203869831.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec4203869831.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec4203869831 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1494200060/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1494200060.dir/build.make CMakeFiles/cmTryCompileExec1494200060.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1494200060.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1494200060.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1494200060
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1494200060.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1494200060.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1494200060 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1350917473/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1350917473.dir/build.make CMakeFiles/cmTryCompileExec1350917473.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1350917473.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec1350917473.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1350917473
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1350917473.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1350917473.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1350917473 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3058263092/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3058263092.dir/build.make CMakeFiles/cmTryCompileExec3058263092.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3058263092.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3058263092.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3058263092
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3058263092.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec3058263092.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3058263092 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2182476985/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2182476985.dir/build.make CMakeFiles/cmTryCompileExec2182476985.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2182476985.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec2182476985.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2182476985
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2182476985.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec2182476985.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2182476985 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec879228325/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec879228325.dir/build.make CMakeFiles/cmTryCompileExec879228325.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec879228325.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec879228325.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec879228325
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec879228325.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec879228325.dir/CheckFunctionExists.c.o  -o cmTryCompileExec879228325 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4146847640/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4146847640.dir/build.make CMakeFiles/cmTryCompileExec4146847640.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4146847640.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec4146847640.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec4146847640
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4146847640.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec4146847640.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec4146847640 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4145210996/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4145210996.dir/build.make CMakeFiles/cmTryCompileExec4145210996.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4145210996.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4145210996.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4145210996
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4145210996.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec4145210996.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4145210996 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1398449350/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1398449350.dir/build.make CMakeFiles/cmTryCompileExec1398449350.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1398449350.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec1398449350.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1398449350
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1398449350.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1398449350.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1398449350 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2195280859/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2195280859.dir/build.make CMakeFiles/cmTryCompileExec2195280859.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2195280859.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2195280859.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2195280859
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2195280859.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec2195280859.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2195280859 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1383522270/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1383522270.dir/build.make CMakeFiles/cmTryCompileExec1383522270.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1383522270.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec1383522270.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1383522270
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1383522270.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1383522270.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1383522270 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4101910248/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4101910248.dir/build.make CMakeFiles/cmTryCompileExec4101910248.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4101910248.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4101910248.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4101910248
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4101910248.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec4101910248.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4101910248 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3559636783/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3559636783.dir/build.make CMakeFiles/cmTryCompileExec3559636783.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3559636783.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec3559636783.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3559636783
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3559636783.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec3559636783.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3559636783 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3924242097/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3924242097.dir/build.make CMakeFiles/cmTryCompileExec3924242097.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3924242097.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3924242097.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3924242097
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3924242097.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec3924242097.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3924242097 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1384043655/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1384043655.dir/build.make CMakeFiles/cmTryCompileExec1384043655.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1384043655.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec1384043655.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1384043655
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1384043655.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1384043655.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1384043655 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3115505704/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3115505704.dir/build.make CMakeFiles/cmTryCompileExec3115505704.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3115505704.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3115505704.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3115505704
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3115505704.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec3115505704.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3115505704 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1016958252/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1016958252.dir/build.make CMakeFiles/cmTryCompileExec1016958252.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1016958252.dir/CheckIncludeFiles.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic    -o CMakeFiles/cmTryCompileExec1016958252.dir/CheckIncludeFiles.c.o   -c /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1016958252
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1016958252.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic   -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec1016958252.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1016958252 -rdynamic 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2702471427/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2702471427.dir/build.make CMakeFiles/cmTryCompileExec2702471427.dir/build
+make[1]: Entering directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2702471427.dir/CheckFunctionExists.c.o
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc   -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2702471427.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2702471427
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2702471427.dir/link.txt --verbose=1
+/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/bin/i686-aldebaran-linux-gnu-gcc     -DI_AM_A_ROBOT --sysroot /home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed,--sysroot,/home/ubuntu14/ctc-linux32-atom-2.1.4.13/cross/i686-aldebaran-linux-gnu/sysroot/ CMakeFiles/cmTryCompileExec2702471427.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2702471427 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/qibuild/facedetection/build-cross-atom/CMakeFiles/CMakeTmp'
+
+
