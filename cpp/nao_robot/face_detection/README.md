@@ -31,12 +31,16 @@ void showImages(const std::string& robotIp, cv::Mat& rapp_image)
 ```
 
 In that function, if we want to save the image for using later we have to copied it in a variable. 
+
 *Be careful!* You have to copy with `copyTo` function. If you only do an assingment, it'll be a segmentation fault because when the function finish, it deletes the data and your new object was pointing to empty data. 
 
 Now we have the main part:
+
 First, we'll take the IP of the robot with an argument. 
+
 After that we can initialize the rapp platform and the callback which we need for making the call.
-In this case, we are going to say how many faces we have found and ,in the case of finding one or more, we draw a rectangle in the face found and save the last in a file. In other way, we can't know what NAO is seeing.
+In this case, we are going to say how many faces we have found and ,in the case of finding one or more, we draw a rectangle in the face found and save the last in a file. 
+In other way, we can't know what NAO is seeing.
 
 ```cpp
 
@@ -57,8 +61,10 @@ In this case, we are going to say how many faces we have found and ,in the case 
 ```
 
 We are going to do a loop for taking the images and detect the faces.
+
 *Be careful!* To avoid block the platform doing calls, we are going to add
 a boost::chrono to do a call every 500 ms.
+
 **NOTE: Avoid use std::chrono. It can't be use with NAO.**
 
 ```cpp
@@ -84,7 +90,9 @@ The next step is to take the image from the `showImages` function:
 ```
 
 Once we have the image, we are going to use RAPP for detecting faces.
+
 However, the type of data which OpenCV has is different of `rapp::object::picture` has.
+
 Because of that we have to use the `cv::imencode` to fill a buffer with the image and read it after with 
 the `picture` class.
 
@@ -102,11 +110,13 @@ the `picture` class.
 ```
 
 **NOTE:** When you use NAOqi SDK and OpenCV library from SDK you can't use `cv::imshow` to see the image. It's limited.
+
 You can read more [here](http://doc.aldebaran.com/2-1/dev/cpp/examples/vision/opencv.html#cpp-tutos-opencv).
 
 ##CMakeLists
 
 We are going to use only `cmake`.
+
 We start with the basic configuration:
 
 ```
@@ -116,6 +126,7 @@ We start with the basic configuration:
     add_executable(face_detection main.cpp)
 ```
 In this case, most of the libraries are inside to NAOqi SDK so we have to specify the library path. 
+
 The first library we are going to use is RAPP. In this case we are using the static one with the variable
 `${RAPP_STATIC_LIBRARIES}`.
 
@@ -202,8 +213,11 @@ At this point you can link your libraries to your executable:
 ```
 
 Finally, we are going to add some flags.
+    
 For example, in RAPP we are using higher compilers of c++ than g++4.8, then we are going to use the static libstdc++ to avoid future problems in NAO.
-And because we are using c++14 we have to use the flag `std=gnu++1y`. **DON'T USE std=c++1y, c++0x, c++11, etc. They are not going to work with NAOqi**
+And because we are using c++14 we have to use the flag `std=gnu++1y`. 
+
+**DON'T USE std=c++1y, c++0x, c++11, etc. They are not going to work with NAOqi**
 
 ##Execute the program
 
@@ -217,5 +231,6 @@ After saving our main.cpp and CMakeLists.txt we are going to build it:
 ```
 
 If everything goes well, then you have an executable `face_detection` in your build folder.
+
 You can execute remotely from your computer using the IP of your robot, or copy to NAO and 
 use the local IP "127.0.0.1". 
