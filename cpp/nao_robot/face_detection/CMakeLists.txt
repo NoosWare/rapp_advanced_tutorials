@@ -29,10 +29,12 @@ message(STATUS ${OPENCV_CORE_LIBRARY})
 find_library(OPENCV_HIGHGUI_LIBRARY NAMES opencv_highgui HINTS ${LIB_PATH})
 message(STATUS ${OPENCV_HIGHGUI_LIBRARY})
 
-
+#COMMON
 find_library(Boost_SYSTEM NAMES boost_system HINTS ${LIB_PATH})
 find_library(Boost_THREAD NAMES boost_thread HINTS ${LIB_PATH})
+find_library(Boost_CHRONO NAMES boost_chrono HINTS ${LIB_PATH})
 set(Boost_LIBRARIES ${Boost_SYSTEM}
+                    ${Boost_CHRONO}
                     ${Boost_THREAD})
 message(STATUS ${Boost_LIBRARIES})
 
@@ -58,7 +60,7 @@ set(NAO_LIBRARIES ${ALPROXIES_LIBRARY}
                   ${OPENCV_CORE_LIBRARY}
                   ${OPENCV_HIGHGUI_LIBRARY})
 
-#BOTH
+#ALL
 target_link_libraries(face_detection ${RAPP_STATIC_LIBRARIES}
                                      ${Boost_LIBRARIES} 
                                      ${Threads}
@@ -66,7 +68,5 @@ target_link_libraries(face_detection ${RAPP_STATIC_LIBRARIES}
                                      ${NAO_LIBRARIES}
 )
 
-                                     #${NAO_LIBRARIES})
-
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libstdc++")
-set(CMAKE_CXX_FLAGS "-std=gnu++1y") #-march=atom -mtune=atom -mfpmath=sse")
+set(CMAKE_CXX_FLAGS "-std=gnu++1y -march=atom -mtune=atom -mfpmath=sse")

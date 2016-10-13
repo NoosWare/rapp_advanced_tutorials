@@ -29,6 +29,9 @@ ALVALUE_LIBRARY:FILEPATH=/home/ubuntu14/naoqi-sdk-2.1.4.13-linux32/lib/libalvalu
 //The threading library used by boost-thread
 BOOST_THREAD_LIBRARY:FILEPATH=/usr/lib/i386-linux-gnu/libpthread.so
 
+//Path to a library.
+Boost_CHRONO:FILEPATH=/home/ubuntu14/naoqi-sdk-2.1.4.13-linux32/lib/libboost_chrono.so
+
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=Boost_DIR-NOTFOUND
 

@@ -17,9 +17,6 @@
 
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/thread/thread.hpp> 
-#include <functional>
-#include <chrono>
-
 
 /**
 * \brief Shows images retrieved from the robot.
@@ -80,7 +77,6 @@ int main(int argc, char* argv[])
      * Then proceed to create a cloud controller.
      * We'll use this object to create cloud calls to the platform.
      */
-    //rapp::cloud::platform info = {"rapp.ee.auth.gr", "9001", "rapp_token"}; 
     rapp::cloud::platform info = {"155.207.19.229", "9001", "rapp_token"}; 
     rapp::cloud::service_controller ctrl(info);
 
@@ -102,47 +98,27 @@ int main(int argc, char* argv[])
     };
 
     /*
-     * We create a variable chrono to count the time.
-     * It's going to be used for making the call every
-     * 500 ms. If we don't do it, we could block the platform.
-     * Other way, if you don't use the windows interface, it's to 
-     * make the call like the `loop.cpp` example.
-     */
-	auto before = std::chrono::system_clock::now();
-
-    /*
-     * Infinite loop 
-     * All it does is every 500 ms is going to read the picture
+     * Call the function to take the image from NAO. It reads
      * from the camera of NAO and create a picture object with this 
      * image. After that we make the call to do the face detection
      */
-    for (;;) {
-		auto now = std::chrono::system_clock::now();
-        auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - before).count(); 
+    try
+    {
+       showImages(robotIp, frame);
+    }
+    catch (const AL::ALError& e)
+    {
+        std::cerr << "Caught exception " << e.what() << std::endl;
+    }
+    
+    if(!frame.empty()) {
+        std::vector<int> param = {{ CV_IMWRITE_PNG_COMPRESSION, 3 }};
+        cv::vector<uchar> buf;
+        cv::imencode(".png", frame, buf, param);
+        std::vector<rapp::types::byte> bytes(buf.begin(), buf.end());
+        rapp::object::picture pic(bytes);
 
-		if (elapsed > 500) {
-            try
-            {
-               showImages(robotIp, frame);
-            }
-            catch (const AL::ALError& e)
-            {
-                std::cerr << "Caught exception " << e.what() << std::endl;
-            }
-            
-            if(!frame.empty()) {
-                std::vector<int> param = {{ CV_IMWRITE_PNG_COMPRESSION, 3 }};
-                cv::vector<uchar> buf;
-                cv::imencode(".png", frame, buf, param);
-                std::vector<rapp::types::byte> bytes(buf.begin(), buf.end());
-                rapp::object::picture pic(bytes);
-                  //auto pic = rapp::object::picture("Lenna.png");
-
-                before = now;
-                ctrl.make_call<rapp::cloud::face_detection>(pic, true, callback);
-            }
-	    }
-        boost::this_thread::sleep(boost::posix_time::milliseconds(500));
+        ctrl.make_call<rapp::cloud::face_detection>(pic, true, callback);
     }
 
     return 0;

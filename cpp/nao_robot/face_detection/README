@@ -1,6 +1,0 @@
-#Face detection with NAO cameras
-
-In this tutorial we are going to do a simple example using the camera of NAO for taking a picture and 
-use RAPP API for detecting faces.
-
-**NOTE: This tutorial assumes that you install and build RAPP API with `-OPEN_NAO=ON` flag** 

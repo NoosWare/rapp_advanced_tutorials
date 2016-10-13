@@ -24052,7 +24052,7 @@ qi/future.hpp
 qitype/anyfunction.hpp
 -
 
-/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/face_detection/main.cpp
+/home/ubuntu14/rapp_advanced_tutorials/cpp/nao_robot/face_detection/main_old.cpp
 alproxies/alvideodeviceproxy.h
 -
 alvision/alimage.h

@@ -83,6 +83,7 @@ face_detection: CMakeFiles/face_detection.dir/main.cpp.o
 face_detection: CMakeFiles/face_detection.dir/build.make
 face_detection: /usr/local/lib/librapp.a
 face_detection: /home/ubuntu14/naoqi-sdk-2.1.4.13-linux32/lib/libboost_system.so
+face_detection: /home/ubuntu14/naoqi-sdk-2.1.4.13-linux32/lib/libboost_chrono.so
 face_detection: /home/ubuntu14/naoqi-sdk-2.1.4.13-linux32/lib/libboost_thread.so
 face_detection: /usr/lib/i386-linux-gnu/libpthread.so
 face_detection: /home/ubuntu14/naoqi-sdk-2.1.4.13-linux32/lib/libssl.so
