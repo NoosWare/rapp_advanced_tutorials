@@ -158,6 +158,14 @@ target_link_libraries(human_detection ${RAPP_LIBRARIES}
 
 ```
 
+And modify the names of the executable and the project:
+
+```
+project(human_detection)
+
+add_executable(human_detection source/human_detection)
+```
+
 ##Repository detail
 
 Before to do anything we have to be careful in the case that we are using a repository.

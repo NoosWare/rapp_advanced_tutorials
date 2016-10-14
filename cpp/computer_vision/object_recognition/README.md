@@ -158,6 +158,14 @@ target_link_libraries(object_recognition ${RAPP_LIBRARIES}
 
 ```
 
+And modify the names of the executable and the project:
+
+```
+project(object_recognition)
+
+add_executable(object_recognition source/object_recognition)
+```
+
 ##Repository detail
 
 Before to do anything we have to be careful in the case that we are using a repository.
