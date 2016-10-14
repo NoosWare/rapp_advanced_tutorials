@@ -126,7 +126,7 @@ if (elapsed > 500) {
     auto pic = rapp::object::picture(bytes);
 
     before = now;
-    ctrl.make_call<rapp::cloud::human_detection>(pic, true, callback);
+    ctrl.make_call<rapp::cloud::human_detection>(pic, callback);
     cv::imshow("Human detection", frame);
 }
 ```
