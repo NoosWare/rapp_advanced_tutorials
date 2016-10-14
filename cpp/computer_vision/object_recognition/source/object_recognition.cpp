@@ -65,8 +65,8 @@ int main()
     /*
      * Construct a lambda, std::function or bind your own functor.
      * In this example we'll pass an inline lambda as the callback.
-     * All it does is to show how many faces have been found and 
-     * show a rectangle in the picture where is that face.
+     * All it does is to show if it has found any object and 
+     * show in the window what object is.
      */
     auto callback = [&](std::string objects) { 
         if (objects.empty()) {
@@ -106,7 +106,6 @@ int main()
             std::vector<rapp::types::byte> bytes(buf.begin(), buf.end());
             auto pic = rapp::object::picture(bytes);
 
-            std::cout << elapsed << std::endl;
             before = now;
             ctrl.make_call<rapp::cloud::object_recognition>(pic, callback);
             cv::imshow("Object recognition", frame);
@@ -114,7 +113,6 @@ int main()
 		if (cv::waitKey(30) >= 0) {
 			break;
 		}
-        //boost::this_thread::sleep(boost::posix_time::milliseconds(300));
     }
     return 0;
 }

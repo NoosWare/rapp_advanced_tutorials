@@ -51,7 +51,7 @@ int main()
      * And initialization of the matrix where we are
      * going to save the images of the camera
      */
-    cv::namedWindow("Object recognition", cv::WINDOW_AUTOSIZE);
+    cv::namedWindow("Human detection", cv::WINDOW_AUTOSIZE);
     cv::Mat frame;
 
     /*
@@ -109,7 +109,7 @@ int main()
 
             before = now;
             ctrl.make_call<rapp::cloud::human_detection>(pic, callback);
-            cv::imshow("Object recognition", frame);
+            cv::imshow("Human detection", frame);
 		}
 		if (cv::waitKey(30) >= 0) {
 			break;
