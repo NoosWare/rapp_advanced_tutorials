@@ -1,4 +1,4 @@
-#Nao with cmake files
+#Nao with cmake files (static)
 
 This project and `helloworld_static` have been created to do the same 
 purpose than the tutorial written in `README.md` which you can find in `/nao_robot`.
@@ -52,40 +52,67 @@ Like we said before, we are going to use only RAPP libraries, so this file will 
 ```
 cmake_minimum_required(VERSION 2.6)
 
-project(helloworld)
+project(helloworld_static)
 
-add_executable(helloworld source/helloworld.cpp)
+add_executable(helloworld_static source/helloworld_static.cpp)
 
 set(LIBRARY_PATH ${LIBRARY_PATH} /usr/local/lib)
 
-find_package(OpenSSL REQUIRED)
-find_package(Boost COMPONENTS system REQUIRED)
-find_package(Threads REQUIRED)
-
+set_target_properties(helloworld_static PROPERTIES LINK_SEARCH_START_STATIC 1)
 set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+
+find_library(LIBDL_LIBRARY NAMES dl)
+message(STATUS ${LIBDL_LIBRARY})
+
 find_library(RAPP_LIBRARY NAMES rapp REQUIRED)
 message(STATUS "${RAPP_LIBRARY}")
 
-set(RAPP_LIBRARIES ${RAPP_LIBRARY} 
-                   ${OPENSSL_LIBRARIES} 
-				   ${Boost_LIBRARIES}
-				   ${CMAKE_THREAD_LIBS_INIT})
+find_package(OpenSSL REQUIRED)
+message(STATUS "${OPENSSL_LIBRARIES}")
 
-target_link_libraries(helloworld ${RAPP_LIBRARIES})
+find_package(Boost COMPONENTS system REQUIRED)
+set(Boost_USE_STATIC_LIBS ON)
+set(BUILD_SHARED_LIBS OFF)
+include_directories(${Boost_INCLUDE_DIR})
+message(STATUS "${Boost_SYSTEM_LIBRARY}")
 
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}-static-libstdc++ -static-libgcc")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -fPIC -Os -s -O2 -march=atom -mtune=atom -mfpmath=sse")
+find_package(Threads REQUIRED)
+
+target_link_libraries(helloworld_static ${RAPP_LIBRARY} 
+                                 ${OPENSSL_LIBRARIES} 
+								 ${Boost_LIBRARIES}
+								 ${CMAKE_THREAD_LIBS_INIT}
+								 ${LIBDL_LIBRARY})
+
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}-static")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -fPIC -Os -s -O2 -march=atom -mtune=atom -mfpmath=sse")```
+
+You could see that we added two lines before starting looking for the libraries:
+
 ```
-
-You could see that we added one line before trying to find RAPP library:
-
-```
+set_target_properties(helloworld_static PROPERTIES LINK_SEARCH_START_STATIC 1)
 set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
 ```
 
-With that line you are looking for the static RAPP library. 
-This is to avoid install RAPP library in NAO. 
-The rest of the examples about NAO robot are going to use always the static one.
+With these lines you force to look for static libraries. 
+We added `message` because with that line you can be sure in the `build` part that the system has found the static ones.
+
+`Boost` library has its own params to set up what type you need.
+
+```
+find_package(Boost COMPONENTS system REQUIRED)
+set(Boost_USE_STATIC_LIBS ON)
+set(BUILD_SHARED_LIBS OFF)
+include_directories(${Boost_INCLUDE_DIR})
+```
+
+Besides, making `OpenSSL` static needs to have `ldl` library static too.
+This is why we added manually here the `LIBDL_LIBRARY`.
+
+```
+find_library(LIBDL_LIBRARY NAMES dl)
+message(STATUS ${LIBDL_LIBRARY})
+```
 
 And the last difference is the `CMAKE_CXX_FLAGS`. Besides the type of c++ that we are going to use
 we added some optimization flags especially for NAO which is based on Intel Atom processor.

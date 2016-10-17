@@ -105,6 +105,8 @@ auto before = std::chrono::system_clock::now();
 for (;;) {
     auto now = std::chrono::system_clock::now();
     auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - before).count(); 
+    ...
+}
 ```
 
 Another issue that we can find is to create a `picture` object, which we need it to make the object_recognition call,

@@ -96,12 +96,14 @@ auto before = std::chrono::system_clock::now();
 for (;;) {
     auto now = std::chrono::system_clock::now();
     auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - before).count(); 
+    ...
+}
 ```
 
 Another issue that we can find is to create a `picture` object, which we need it to make the face_detection call,
 because to create one it's needed a `ifstream`. This means, that `cv::Mat` we have to convert it in a correct way. 
 The good news is OpenCV has a function which is perfect for this `cv::imencode`.
-*To see more information, you can visit this web page: [cv::imencode](http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html).
+*To see more information, you can visit this web page: [cv::imencode](http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html).*
 Then, every 500 ms we have to pass the parameter in this way:
 
 ```cpp

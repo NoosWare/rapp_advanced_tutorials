@@ -7,7 +7,7 @@ add_executable(helloworld source/helloworld.cpp)
 set(LIBRARY_PATH ${LIBRARY_PATH} /usr/local/lib)
 
 find_package(OpenSSL REQUIRED)
-find_package(Boost 1.55 COMPONENTS system REQUIRED)
+find_package(Boost COMPONENTS system REQUIRED)
 find_package(Threads REQUIRED)
 
 set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")

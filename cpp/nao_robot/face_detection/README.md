@@ -74,6 +74,9 @@ a boost::chrono to do a call every 500 ms.
 		auto now = boost::chrono::system_clock::now();
         auto elapsed = boost::chrono::duration_cast<boost::chrono::milliseconds>(now - before).count(); 
 		if (elapsed > 500) {
+        ...
+        }
+   }
 ```
 
 The next step is to take the image from the `showImages` function:
@@ -217,7 +220,7 @@ Finally, we are going to add some flags.
 For example, in RAPP we are using higher compilers of c++ than g++4.8, then we are going to use the static libstdc++ to avoid future problems in NAO.
 And because we are using c++14 we have to use the flag `std=gnu++1y`. 
 
-**DON'T USE std=c++1y, c++0x, c++11, etc. They are not going to work with NAOqi**
+**DON'T USE `std=c++1y`, `c++0x`, `c++11`, etc. They are not going to work with NAOqi**
 
 ##Execute the program
 

@@ -9,8 +9,7 @@ set(LIBRARY_PATH ${LIBRARY_PATH} /usr/local/lib)
 set_target_properties(helloworld_static PROPERTIES LINK_SEARCH_START_STATIC 1)
 set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
 
-set(LIBDL_NAMES dl libdl ltdl libltdl)
-find_library(LIBDL_LIBRARY NAMES ${LIBDL_NAMES})
+find_library(LIBDL_LIBRARY NAMES dl)
 message(STATUS ${LIBDL_LIBRARY})
 
 find_library(RAPP_LIBRARY NAMES rapp REQUIRED)
@@ -35,4 +34,3 @@ target_link_libraries(helloworld_static ${RAPP_LIBRARY}
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}-static")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall -fPIC -Os -s -O2 -march=atom -mtune=atom -mfpmath=sse")
-
