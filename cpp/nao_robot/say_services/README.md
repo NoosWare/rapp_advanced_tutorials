@@ -89,7 +89,8 @@ set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
 
 In the case you use `find_package` you only have to use `RAPP_STATIC_LIBRARY` param for the static one.
 
-*Be careful with `Boost` version* 
+*Be careful with `Boost` version*.
+ 
 Because if you are using in your computer a different version of `Boost 1.55`, you have to do static this library.
 If you already have 1.55, then you can use the share one.
 In our case, we were using Boost 1.54, so we wanted the static version.
