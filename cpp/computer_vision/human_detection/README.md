@@ -2,8 +2,7 @@
 
 **This tutorial assumes that RAPP API and OpenCV are installed.**
 
-In the following document it's going to explain how to create your own OpenCV project
-based in RAPP and how to do a proper CMakeLists.txt
+We are going to create a project using OpenCV, RAPP API and CMake.
 
 Using CMake requires you to configure your CMakeLists.txt in the **root** of your RAPP project.
 Essentially, the structure is the following:
@@ -16,10 +15,9 @@ project/
         build/
 ```
 
-##Writing the code
+##Source code
 
-The first step is to write your code.
-In this case, we created a project called `human_detection` with a folder `source` where we have our
+We created a project called `human_detection` with a folder `source` where we have our
 example call `human_detection.cpp`.
 You can see the complete example [here](source/human_detection.cpp).
 
@@ -113,7 +111,7 @@ Another issue that we can find is to create a `picture` object, which we need it
 because to create one it's needed a `ifstream`. This means, that `cv::Mat` we have to convert it in a correct way. 
 The good news is OpenCV has a function which is perfect for this `cv::imencode`.
 
-*To see more information, you can visit this web page: [cv::imencode](http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html).
+*To see more information, you can visit this web page: [cv::imencode](http://docs.opencv.org/2.4/modules/highgui/doc/reading_and_writing_images_and_video.html).*
 
 Then, every 500 ms we have to pass the parameter in this way:
 
@@ -139,7 +137,7 @@ However, the interhuman is not going to refresh the image until we use `cv::wait
 
 *NOTE: You'll have to add the propers headers at the begining of the file. If you have some doubts, you can see the complete example link above*
 
-##Write the CMakeLists.txt
+##CMakeLists.txt
 
 In this case it assumes that you have built your RAPP API in the **static** and **shared** libraries mode.
 
@@ -195,6 +193,7 @@ Now we are going to work in the terminal.
 mkdir build
 cd build 
 cmake ..
+make
 ```
 
 3. If everything is ok, you will have created your executable `human_detection` in the folder build.

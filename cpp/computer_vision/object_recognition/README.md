@@ -2,9 +2,7 @@
 
 **This tutorial assumes that RAPP API and OpenCV are installed.**
 
-In the following document it's going to explain how to create your own OpenCV project
-based in RAPP and how to do a proper CMakeLists.txt
-
+We are going to create a project using OpenCV, RAPP API and CMake.
 Using CMake requires you to configure your CMakeLists.txt in the **root** of your RAPP project.
 Essentially, the structure is the following:
 
@@ -16,7 +14,7 @@ project/
         build/
 ```
 
-##Writing the code
+##Source code
 
 The first step is to write your code.
 In this case, we created a project called `object_recognition` with a folder `source` where we have our
@@ -139,7 +137,7 @@ However, the interface is not going to refresh the image until we use `cv::waitK
 
 *NOTE: You'll have to add the propers headers at the begining of the file. If you have some doubts, you can see the complete example link above*
 
-##Write the CMakeLists.txt
+##CMakeLists.txt
 
 In this case it assumes that you have built your RAPP API in the **static** and **shared** libraries mode.
 
@@ -195,6 +193,7 @@ Now we are going to work in the terminal.
 mkdir build
 cd build 
 cmake ..
+make
 ```
 
 3. If everything is ok, you will have created your executable `object_recognition` in the folder build.

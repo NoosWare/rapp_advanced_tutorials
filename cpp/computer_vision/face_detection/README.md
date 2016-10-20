@@ -2,8 +2,7 @@
 
 **This tutorial assumes that RAPP API and OpenCV are installed.**
 
-In the following document it's going to explain how to create your own OpenCV project
-based in RAPP and how to do a proper CMakeLists.txt
+We are going to do a project using OpenCV, RAPP and CMake.
 
 Using CMake requires you to configure your CMakeLists.txt in the **root** of your RAPP project.
 Essentially, the structure is the following:
@@ -16,10 +15,9 @@ project/
         build/
 ```
 
-##Writing the code
+##Source code
 
-The first step is to write your code.
-In this case, we created a project called `face_detection` with a folder `source` where we have our
+We created a project called `face_detection` with a folder `source` where we have our
 example call `face_detection.cpp`.
 You can see the complete example [here](source/face_detection.cpp).
 
@@ -124,11 +122,12 @@ if (elapsed > 500) {
 
 After having the `picture` object, we can make the call and then show in the OpenCV interface (`cv::imshow`).
 However, the interface is not going to refresh the image until we use `cv::waitKey` function.
+
 *To see more information you can visit this web site: [OpenCV interface](http://docs.opencv.org/2.4/modules/highgui/doc/user_interface.html).*
 
 *NOTE: You'll have to add the propers headers at the begining of the file. If you have some doubts, you can see the complete example link above*
 
-##Write the CMakeLists.txt
+##CMakeLists.txt
 
 In this case it assumes that you have built your RAPP API in the **static** and **shared** libraries mode.
 
@@ -176,6 +175,7 @@ Now we are going to work in the terminal.
 mkdir build
 cd build 
 cmake ..
+make
 ```
 
 3. If everything is ok, you will have created your executable `face_detection` in the folder build.
