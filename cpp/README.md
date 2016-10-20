@@ -10,8 +10,8 @@ Advanced examples using C++ and actual robots.
 |Object recognition| RAPP + OpenCV | [Object recognition documentation](/computer_vision/object_recognition/README.md)|
 |           |       |
 |**NAO Robot**|       |   |
-|Helloworld | RAPP | [Helloworld documentation](/nao_robot/helloworld/README.md)
-|Helloworld Static | RAPP| [Helloworld static documentation](/nao_robot/helloworld_static/README.md)
+|Helloworld | RAPP | [Helloworld documentation](nao_robot/helloworld/README.md)
+|Helloworld Static | RAPP| [Helloworld static documentation](nao_robot/helloworld_static/README.md)
 |Say Services | RAPP + NAOqi |
 |Face detection | RAPP + NAOqi |
 |           |       |
