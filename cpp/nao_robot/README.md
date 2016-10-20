@@ -220,6 +220,20 @@ The executable when run will warn you about ABI miss-match during runtime:
 
 If you only use HTTP for communicating with the cloud, then there exists no problem (TLS won't be used).
 
+## CMake and QIbuild
+
+You can use CMake or qibuild in your projects.
+
+| Tutorials | Tools | Link |
+|-----------|-------|------|
+|Helloworld | RAPP + CMake| [Helloworld](helloworld/)|
+|Helloworld | RAPP + NAOqi + qibuild | [qiHelloworld](qibuild/helloworld/)|
+|Helloworld Static | RAPP + CMake | [Helloworld static](helloworld_static/)|
+|Face detection | RAPP + NAOqi + CMake| [Face detection](face_detection/)|
+|Face detection| RAPP + NAOqi + qibuild | [qiFace detection](qibuild/facedetection/)|
+|Say Services | RAPP + NAOqi + CMake| [Say services](say_services/)|
+|           |       |   |
+
 ## Getting Help
 
 You can contact us on Gitter: 

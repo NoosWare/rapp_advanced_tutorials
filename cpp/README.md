@@ -10,10 +10,11 @@ Advanced examples using C++ and actual robots.
 |Object recognition| RAPP + OpenCV + CMake| [Object recognition](computer_vision/object_recognition/)|
 |           |       |
 |**NAO Robot**|       |   |
-|Helloworld | RAPP + CMake| [Helloworld](nao_robot/helloworld/)|
-|Helloworld Static | RAPP + CMake | [Helloworld static](nao_robot/helloworld_static/)|
+|Helloworld | RAPP | [Helloworld](nao_robot/)|
+|Helloworld | RAPP + CMake| [Helloworld with cmake](nao_robot/helloworld/)|
+|Helloworld | RAPP + NAOqi + qibuild | [Helloworld with qibuild](nao_robot/qibuild/helloworld/)|
+|Helloworld Static | RAPP + CMake | [Helloworld static with cmake](nao_robot/helloworld_static/)|
+|Face detection | RAPP + NAOqi + CMake| [Face detection with cmake](nao_robot/face_detection/)|
+|Face detection| RAPP + NAOqi + qibuild | [Face detection with qibuild](nao_robot/qibuild/facedetection/)|
 |Say Services | RAPP + NAOqi + CMake| [Say services](nao_robot/say_services/)|
-|Face detection | RAPP + NAOqi + CMake| [Face detection](nao_robot/face_detection/)|
-|Helloworld | RAPP + NAOqi + qibuild | [Helloworld](nao_robot/qibuild/helloworld/)|
-|Face detection| RAPP + NAOqi + qibuild | [Face detection](nao_robot/qibuild/facedetection/)|
 |           |       |   |
